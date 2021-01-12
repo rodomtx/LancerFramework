@@ -1,0 +1,291 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80ECF346-DD1F-44E4-8CEF-902AF4E3145D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Templeate_LIN</RootNamespace>
+    <AssemblyName>Templeate_LIN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\perfil.png" />
+    <Content Include="retrabajos\rwHospital.aspx" />
+    <Content Include="retrabajos\rwInventory.aspx" />
+    <Content Include="retrabajos\rwRequest.aspx" />
+    <Content Include="retrabajos\rwSeguimiento.aspx" />
+    <Content Include="signin.aspx" />
+    <Content Include="signout.aspx" />
+    <Content Include="signup.aspx" />
+    <Content Include="template\404.html" />
+    <Content Include="css\application.min.css" />
+    <Content Include="css\lib\getmdl-select.min.css" />
+    <Content Include="css\lib\nv.d3.min.css" />
+    <Content Include="template\css\application.min.css" />
+    <Content Include="template\css\lib\getmdl-select.min.css" />
+    <Content Include="template\css\lib\nv.d3.min.css" />
+    <Content Include="template\forgot-password.html" />
+    <Content Include="template\forms.html" />
+    <Content Include="images\404.svg" />
+    <Content Include="images\active_marker.png" />
+    <Content Include="images\Bobby.PNG" />
+    <Content Include="images\buffer.svg" />
+    <Content Include="images\card.jpg" />
+    <Content Include="images\cloudy_and_snow.svg" />
+    <Content Include="images\cotoneaster.jpg" />
+    <Content Include="images\Dark_background_1920x1080.png" />
+    <Content Include="images\DB_16х16.png" />
+    <Content Include="images\gina-torres.png" />
+    <Content Include="images\Icon.png" />
+    <Content Include="images\Icon_header.png" />
+    <Content Include="images\imgo.png" />
+    <Content Include="images\istanbul.jpg" />
+    <Content Include="images\map_target_images_sprite.png" />
+    <Content Include="images\marker.png" />
+    <Content Include="images\nathan-fillion.png" />
+    <Content Include="images\robot.png" />
+    <Content Include="images\sao_paulo.jpg" />
+    <Content Include="images\skype.svg" />
+    <Content Include="images\tick-mask.svg" />
+    <Content Include="images\tick.svg" />
+    <Content Include="images\tick_dark.svg" />
+    <Content Include="images\tokyo.jpg" />
+    <Content Include="images\tudyk.png" />
+    <Content Include="images\watch_white.svg" />
+    <Content Include="images\weather_bck.png" />
+    <Content Include="template\images\404.svg" />
+    <Content Include="template\images\active_marker.png" />
+    <Content Include="template\images\Bobby.PNG" />
+    <Content Include="template\images\buffer.svg" />
+    <Content Include="template\images\card.jpg" />
+    <Content Include="template\images\cloudy_and_snow.svg" />
+    <Content Include="template\images\cotoneaster.jpg" />
+    <Content Include="template\images\Dark_background_1920x1080.png" />
+    <Content Include="template\images\DB_16х16.png" />
+    <Content Include="template\images\gina-torres.png" />
+    <Content Include="template\images\Icon.png" />
+    <Content Include="template\images\Icon_header.png" />
+    <Content Include="template\images\imgo.png" />
+    <Content Include="template\images\istanbul.jpg" />
+    <Content Include="template\images\map_target_images_sprite.png" />
+    <Content Include="template\images\marker.png" />
+    <Content Include="template\images\nathan-fillion.png" />
+    <Content Include="template\images\robot.png" />
+    <Content Include="template\images\sao_paulo.jpg" />
+    <Content Include="template\images\skype.svg" />
+    <Content Include="template\images\tick-mask.svg" />
+    <Content Include="template\images\tick.svg" />
+    <Content Include="template\images\tick_dark.svg" />
+    <Content Include="template\images\tokyo.jpg" />
+    <Content Include="template\images\tudyk.png" />
+    <Content Include="template\images\watch_white.svg" />
+    <Content Include="template\images\weather_bck.png" />
+    <Content Include="template\index.html" />
+    <Content Include="js\d3.min.js" />
+    <Content Include="js\getmdl-select.min.js" />
+    <Content Include="js\layout\layout.min.js" />
+    <Content Include="js\material.min.js" />
+    <Content Include="js\nv.d3.min.js" />
+    <Content Include="js\scroll\scroll.min.js" />
+    <Content Include="js\widgets\charts\discreteBarChart.min.js" />
+    <Content Include="js\widgets\charts\linePlusBarChart.min.js" />
+    <Content Include="js\widgets\charts\stackedBarChart.min.js" />
+    <Content Include="js\widgets\employer-form\employer-form.min.js" />
+    <Content Include="js\widgets\line-chart\line-charts-nvd3.min.js" />
+    <Content Include="js\widgets\map\maps.min.js" />
+    <Content Include="js\widgets\pie-chart\pie-charts-nvd3.min.js" />
+    <Content Include="js\widgets\table\table.min.js" />
+    <Content Include="js\widgets\todo\todo.min.js" />
+    <Content Include="template\js\d3.min.js" />
+    <Content Include="template\js\getmdl-select.min.js" />
+    <Content Include="template\js\layout\layout.min.js" />
+    <Content Include="template\js\material.min.js" />
+    <Content Include="template\js\nv.d3.min.js" />
+    <Content Include="template\js\scroll\scroll.min.js" />
+    <Content Include="template\js\widgets\charts\discreteBarChart.min.js" />
+    <Content Include="template\js\widgets\charts\linePlusBarChart.min.js" />
+    <Content Include="template\js\widgets\charts\stackedBarChart.min.js" />
+    <Content Include="template\js\widgets\employer-form\employer-form.min.js" />
+    <Content Include="template\js\widgets\line-chart\line-charts-nvd3.min.js" />
+    <Content Include="template\js\widgets\map\maps.min.js" />
+    <Content Include="template\js\widgets\pie-chart\pie-charts-nvd3.min.js" />
+    <Content Include="template\js\widgets\table\table.min.js" />
+    <Content Include="template\js\widgets\todo\todo.min.js" />
+    <Content Include="template\login.html" />
+    <Content Include="template\maps.html" />
+    <Content Include="template\sign-up.html" />
+    <Content Include="template\ui-buttons.html" />
+    <Content Include="template\ui-cards.html" />
+    <Content Include="template\ui-colors.html" />
+    <Content Include="template\ui-components.html" />
+    <Content Include="template\ui-form-components.html" />
+    <Content Include="template\ui-icons.html" />
+    <Content Include="template\ui-list-components.html" />
+    <Content Include="template\ui-tables.html" />
+    <Content Include="template\ui-typography.html" />
+    <Content Include="Web.config" />
+    <Content Include="Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="areaItem.cs" />
+    <Compile Include="CRUD.cs" />
+    <Compile Include="MAIL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="retrabajos\rwHospital.aspx.cs">
+      <DependentUpon>rwHospital.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="retrabajos\rwHospital.aspx.designer.cs">
+      <DependentUpon>rwHospital.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="retrabajos\rwInventory.aspx.cs">
+      <DependentUpon>rwInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="retrabajos\rwInventory.aspx.designer.cs">
+      <DependentUpon>rwInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="retrabajos\rwRequest.aspx.cs">
+      <DependentUpon>rwRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="retrabajos\rwRequest.aspx.designer.cs">
+      <DependentUpon>rwRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="retrabajos\rwSeguimiento.aspx.cs">
+      <DependentUpon>rwSeguimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="retrabajos\rwSeguimiento.aspx.designer.cs">
+      <DependentUpon>rwSeguimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reworkItem.cs" />
+    <Compile Include="security.cs" />
+    <Compile Include="signin.aspx.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signin.aspx.designer.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signout.aspx.cs">
+      <DependentUpon>signout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signout.aspx.designer.cs">
+      <DependentUpon>signout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49877</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49877/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

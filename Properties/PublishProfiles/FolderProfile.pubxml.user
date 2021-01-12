@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>\\192.168.60.222\Andon</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Templeate_LIN.dll">
+      <publishTime>01/08/2021 15:48:28</publishTime>
+    </File>
+    <File Include="bin/Templeate_LIN.pdb">
+      <publishTime>01/08/2021 15:48:28</publishTime>
+    </File>
+    <File Include="css/application.min.css">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="css/lib/getmdl-select.min.css">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="css/lib/nv.d3.min.css">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>01/05/2021 12:39:27</publishTime>
+    </File>
+    <File Include="HtmlPage1.html">
+      <publishTime>01/08/2021 14:26:05</publishTime>
+    </File>
+    <File Include="images/404.svg">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/active_marker.png">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/Bobby.PNG">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/buffer.svg">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/card.jpg">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/cloudy_and_snow.svg">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/cotoneaster.jpg">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/Dark_background_1920x1080.png">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/DB_16х16.png">
+      <publishTime>01/05/2021 12:31:10</publishTime>
+    </File>
+    <File Include="images/gina-torres.png">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/Icon.png">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/Icon_header.png">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/imgo.png">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/istanbul.jpg">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/map_target_images_sprite.png">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/marker.png">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/nathan-fillion.png">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/perfil.png">
+      <publishTime>01/06/2021 10:46:26</publishTime>
+    </File>
+    <File Include="images/robot.png">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/sao_paulo.jpg">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/skype.svg">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/tick-mask.svg">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/tick.svg">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/tick_dark.svg">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/tokyo.jpg">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/tudyk.png">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/watch_white.svg">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="images/weather_bck.png">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>01/04/2021 12:08:51</publishTime>
+    </File>
+    <File Include="js/d3.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/getmdl-select.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/layout/layout.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/material.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/nv.d3.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/scroll/scroll.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/widgets/charts/discreteBarChart.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/widgets/charts/linePlusBarChart.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/widgets/charts/stackedBarChart.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/widgets/employer-form/employer-form.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/widgets/line-chart/line-charts-nvd3.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/widgets/map/maps.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/widgets/pie-chart/pie-charts-nvd3.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/widgets/table/table.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="js/widgets/todo/todo.min.js">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="retrabajos/index.aspx">
+      <publishTime>01/04/2021 12:20:31</publishTime>
+    </File>
+    <File Include="retrabajos/rwHospital.aspx">
+      <publishTime>01/07/2021 09:41:58</publishTime>
+    </File>
+    <File Include="retrabajos/rwInventory.aspx">
+      <publishTime>01/06/2021 14:55:37</publishTime>
+    </File>
+    <File Include="retrabajos/rwRequest.aspx">
+      <publishTime>01/08/2021 10:28:52</publishTime>
+    </File>
+    <File Include="retrabajos/rwSeguimiento.aspx">
+      <publishTime>01/08/2021 15:40:15</publishTime>
+    </File>
+    <File Include="signin.aspx">
+      <publishTime>01/07/2021 10:57:46</publishTime>
+    </File>
+    <File Include="signout.aspx">
+      <publishTime>01/07/2021 09:09:53</publishTime>
+    </File>
+    <File Include="signup.aspx">
+      <publishTime>01/07/2021 11:00:16</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>01/07/2021 17:06:42</publishTime>
+    </File>
+    <File Include="template/404.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/css/application.min.css">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/css/lib/getmdl-select.min.css">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/css/lib/nv.d3.min.css">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/forgot-password.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/forms.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/images/404.svg">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/active_marker.png">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/Bobby.PNG">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/buffer.svg">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/card.jpg">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/cloudy_and_snow.svg">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/cotoneaster.jpg">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/Dark_background_1920x1080.png">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/DB_16х16.png">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/gina-torres.png">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/Icon.png">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/Icon_header.png">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/imgo.png">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/istanbul.jpg">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/map_target_images_sprite.png">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/marker.png">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/nathan-fillion.png">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/robot.png">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/sao_paulo.jpg">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/skype.svg">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/tick-mask.svg">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/tick.svg">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/tick_dark.svg">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/tokyo.jpg">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/tudyk.png">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/watch_white.svg">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/images/weather_bck.png">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/index.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/js/d3.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/getmdl-select.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/layout/layout.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/material.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/nv.d3.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/scroll/scroll.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/widgets/charts/discreteBarChart.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/widgets/charts/linePlusBarChart.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/widgets/charts/stackedBarChart.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/widgets/employer-form/employer-form.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/widgets/line-chart/line-charts-nvd3.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/widgets/map/maps.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/widgets/pie-chart/pie-charts-nvd3.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/widgets/table/table.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/js/widgets/todo/todo.min.js">
+      <publishTime>01/04/2021 12:08:06</publishTime>
+    </File>
+    <File Include="template/login.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/maps.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/sign-up.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/ui-buttons.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/ui-cards.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/ui-colors.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/ui-components.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/ui-form-components.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/ui-icons.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/ui-list-components.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/ui-tables.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="template/ui-typography.html">
+      <publishTime>01/04/2021 11:56:24</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/08/2021 14:27:20</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

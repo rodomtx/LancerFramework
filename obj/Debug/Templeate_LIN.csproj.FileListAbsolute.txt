@@ -1,0 +1,7 @@
+C:\Users\rodolfo.martinez\source\repos\Templeate_LIN\bin\Templeate_LIN.dll.config
+C:\Users\rodolfo.martinez\source\repos\Templeate_LIN\bin\Templeate_LIN.dll
+C:\Users\rodolfo.martinez\source\repos\Templeate_LIN\bin\Templeate_LIN.pdb
+C:\Users\rodolfo.martinez\source\repos\Templeate_LIN\obj\Debug\Templeate_LIN.csproj.CoreCompileInputs.cache
+C:\Users\rodolfo.martinez\source\repos\Templeate_LIN\obj\Debug\Templeate_LIN.dll
+C:\Users\rodolfo.martinez\source\repos\Templeate_LIN\obj\Debug\Templeate_LIN.pdb
+C:\Users\rodolfo.martinez\source\repos\Templeate_LIN\obj\Debug\Templeate_LIN.csprojAssemblyReference.cache
