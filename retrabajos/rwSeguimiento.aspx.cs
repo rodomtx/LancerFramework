@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Templeate_LIN.retrabajos
 {
-   
+
     public partial class rwSeguimiento : System.Web.UI.Page
     {
         CRUD crud = new CRUD();
@@ -17,6 +17,19 @@ namespace Templeate_LIN.retrabajos
         {
             seguridad.verify();
 
+
+            if (!string.IsNullOrEmpty(Request.QueryString["rwID"]))
+            {
+
+                int rwID = Int32.Parse(Request.QueryString["rwID"]);
+            }
+
+            
+        }
+
+        void aviso()
+        {
+            avisos.InnerHtml += "<p> <span class='color-text--green'>" + Request.QueryString["rwID"] + "</span></p>";
         }
     }
 }

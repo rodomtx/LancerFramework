@@ -33,6 +33,7 @@ namespace Templeate_LIN.retrabajos
                 cuerpoTablaRetrabajos.InnerHtml += "                               <td class='mdl-data-table__cell--non-numeric'><span class='label label--mini color--" + ri.hospitalReciboFlag + "'>" + ri.hospitalRecibo + " " + ri.hospitalReciboMedida + "</span> </td>";
                 cuerpoTablaRetrabajos.InnerHtml += "                               <td class='mdl-data-table__cell--non-numeric'><span class='label label--mini color--" + ri.fundidoraReciboFlag+ "'>" + ri.fundidoraRecibo + " " + ri.fundidoraReciboMedida + "</span> </td>";
                 cuerpoTablaRetrabajos.InnerHtml += "                               <td class='mdl-data-table__cell--non-numeric'><span class='label label--mini color--" + ri.retornoHospitalflag + "'>" + ri.retornoHospital + " " + ri.retornoHospitalMedida + "</span> </td>";
+                cuerpoTablaRetrabajos.InnerHtml += "                               <td class='mdl-data-table__cell--non-numeric'><a href=/retrabajos/rwSeguimiento.aspx?rwID=" + ri.operacionSeq + "><i class='material-icons'>create</i></a></td>";
                 cuerpoTablaRetrabajos.InnerHtml += "                            </tr>";
 
             }

@@ -58,15 +58,12 @@
                                     <!--- Drop Box Seleccionar Area --->
                                    
                                     <asp:DropDownList id="area" runat="server" class="mdl-textfield__input">
-                                         
                                           
                                     </asp:DropDownList>
-                                    
-                                </div>
+                               </div>
                         </div>
-
-                           
-                       <!--- Separador Seccion Details --->
+                        
+                            <!--- Separador Seccion Details --->
                         <div class="form__article employer-form__general_skills">
                             <h3>Detalles</h3>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">

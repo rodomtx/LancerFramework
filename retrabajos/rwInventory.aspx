@@ -14,12 +14,13 @@
                             <tr>
                                 <th class="mdl-data-table__cell--non-numeric">#</th>
                                 <th class="mdl-data-table__cell--non-numeric">Area</th>
-                                <th class="mdl-data-table__cell--non-numeric">Owner</th>
-                                <th class="mdl-data-table__cell--non-numeric">Started</th>
-                                <th class="mdl-data-table__cell--non-numeric">Journal</th>
-                                <th class="mdl-data-table__cell--non-numeric">Hospital Receive</th>
-                                <th class="mdl-data-table__cell--non-numeric">Foundry Receive</th>
-                                <th class="mdl-data-table__cell--non-numeric">Hospital Return</th>
+                                <th class="mdl-data-table__cell--non-numeric">Solicitante</th>
+                                <th class="mdl-data-table__cell--non-numeric">Inicio</th>
+                                <th class="mdl-data-table__cell--non-numeric">Asignacion Journal</th>
+                                <th class="mdl-data-table__cell--non-numeric">Recibo Hospital</th>
+                                <th class="mdl-data-table__cell--non-numeric">Recibo Fundidora</th>
+                                <th class="mdl-data-table__cell--non-numeric">Regreso Hospital</th>
+                                <th class="mdl-data-table__cell--non-numeric">Modificar</th>
                             </tr>
                             </thead>
                             <tbody id="cuerpoTablaRetrabajos" runat="server">

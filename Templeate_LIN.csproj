@@ -67,6 +67,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="andon\anAlertas.aspx" />
+    <Content Include="andon\anIniciarAlerta.aspx" />
+    <Content Include="andon\anResumen.aspx" />
     <Content Include="images\perfil.png" />
     <Content Include="retrabajos\rwHospital.aspx" />
     <Content Include="retrabajos\rwInventory.aspx" />
@@ -185,6 +188,27 @@
     <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="andon\anAlertas.aspx.cs">
+      <DependentUpon>anAlertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="andon\anAlertas.aspx.designer.cs">
+      <DependentUpon>anAlertas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="andon\anIniciarAlerta.aspx.cs">
+      <DependentUpon>anIniciarAlerta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="andon\anIniciarAlerta.aspx.designer.cs">
+      <DependentUpon>anIniciarAlerta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="andon\anResumen.aspx.cs">
+      <DependentUpon>anResumen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="andon\anResumen.aspx.designer.cs">
+      <DependentUpon>anResumen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="areaItem.cs" />
     <Compile Include="CRUD.cs" />
     <Compile Include="MAIL.cs" />
