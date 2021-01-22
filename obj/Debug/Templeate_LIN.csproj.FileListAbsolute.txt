@@ -5,3 +5,10 @@ C:\Users\rodolfo.martinez\source\repos\Templeate_LIN\obj\Debug\Templeate_LIN.csp
 C:\Users\rodolfo.martinez\source\repos\Templeate_LIN\obj\Debug\Templeate_LIN.dll
 C:\Users\rodolfo.martinez\source\repos\Templeate_LIN\obj\Debug\Templeate_LIN.pdb
 C:\Users\rodolfo.martinez\source\repos\Templeate_LIN\obj\Debug\Templeate_LIN.csprojAssemblyReference.cache
+C:\Users\carlos.esparza\Source\Repos\LancerFramework\bin\Templeate_LIN.dll.config
+C:\Users\carlos.esparza\Source\Repos\LancerFramework\bin\Templeate_LIN.dll
+C:\Users\carlos.esparza\Source\Repos\LancerFramework\bin\Templeate_LIN.pdb
+C:\Users\carlos.esparza\Source\Repos\LancerFramework\obj\Debug\Templeate_LIN.csprojAssemblyReference.cache
+C:\Users\carlos.esparza\Source\Repos\LancerFramework\obj\Debug\Templeate_LIN.csproj.CoreCompileInputs.cache
+C:\Users\carlos.esparza\Source\Repos\LancerFramework\obj\Debug\Templeate_LIN.dll
+C:\Users\carlos.esparza\Source\Repos\LancerFramework\obj\Debug\Templeate_LIN.pdb
