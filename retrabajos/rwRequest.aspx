@@ -15,7 +15,7 @@
                     <form action="#" class="form" runat="server">
                         <div class="form__article">
                         <!--- Separador Seccion Finish Goos --->
-                            <h3>Finish Good Information</h3>
+                            <h3>Informacion de la maquina</h3>
 
                             <!--- Machine Part Number --->
                             <div class="mdl-grid">
@@ -45,7 +45,7 @@
 
                             <!--- Separador Request Information --->
                         <div class="form__article">
-                            <h3>Informacion Solicitanten</h3>
+                            <h3>Informacion Solicitante</h3>
                             <div class="mdl-grid">
                                 <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                     <!--- Input Supervisor --->
@@ -65,11 +65,11 @@
                         
                             <!--- Separador Seccion Details --->
                         <div class="form__article employer-form__general_skills">
-                            <h3>Detalles</h3>
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <h3>Motivo del retrabajo</h3>
+                            <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
                                 <!--- Input Details --->
-                                <textarea class="mdl-textfield__input" type="text" rows="3" id="descripcion" runat="server"></textarea>
-                                <label class="mdl-textfield__label" for="description">Describa los problemas que presenta el Cold Plate</label>
+                                <asp:DropDownList id="ListRazones" runat="server" class="mdl-textfield__input">
+                                 </asp:DropDownList>
                             </div>
                         </div>
                        

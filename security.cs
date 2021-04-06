@@ -7,13 +7,13 @@ using System.Text;
 
 namespace Templeate_LIN
 {
-    public class security
+    public class SECURITY
     {
         string auth;
         string usuario;
         int grupoSeguridad;
         
-        public security()
+        public SECURITY()
         { 
             
         }
@@ -85,7 +85,7 @@ namespace Templeate_LIN
 
             bool ans = false;
 
-            ans = crud.VerificarAcceso(_correo, _permiso);
+            ans = crud.verificarAcceso(_correo, _permiso);
 
             return ans;
         }

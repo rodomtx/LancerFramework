@@ -12,14 +12,16 @@
                         <table class="mdl-data-table mdl-js-data-table stripped-table">
                             <thead>
                             <tr>
-                                <th class="mdl-data-table__cell--non-numeric">#</th>
+                                <th class="mdl-data-table__cell--non-numeric">Operacion</th>
                                 <th class="mdl-data-table__cell--non-numeric">Area</th>
                                 <th class="mdl-data-table__cell--non-numeric">Solicitante</th>
                                 <th class="mdl-data-table__cell--non-numeric">Inicio</th>
                                 <th class="mdl-data-table__cell--non-numeric">Asignacion Journal</th>
                                 <th class="mdl-data-table__cell--non-numeric">Recibo Hospital</th>
                                 <th class="mdl-data-table__cell--non-numeric">Recibo Fundidora</th>
+                                <th class="mdl-data-table__cell--non-numeric">Revision Fundidora</th>
                                 <th class="mdl-data-table__cell--non-numeric">Regreso Hospital</th>
+                                <th class="mdl-data-table__cell--non-numeric">Inspeccion Final</th>
                                 <th class="mdl-data-table__cell--non-numeric">Modificar</th>
                             </tr>
                             </thead>

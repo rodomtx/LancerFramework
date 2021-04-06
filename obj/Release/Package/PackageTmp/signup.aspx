@@ -47,26 +47,26 @@
                     <span class="mdl-card__title-text text-color--smooth-gray">Lancer Framework</span>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
-                    <span class="login-name text-color--white">Sign up</span>
+                    <span class="login-name text-color--white">Crear cuenta</span>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-size">
                         <input class="mdl-textfield__input" type="text" id="name" runat="server">
-                        <label class="mdl-textfield__label" for="name">Name</label>
+                        <label class="mdl-textfield__label" for="name">Nombre</label>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-size">
                         <input class="mdl-textfield__input" type="password" id="password" runat="server">
-                        <label class="mdl-textfield__label" for="password">Password</label>
+                        <label class="mdl-textfield__label" for="password">Contrasena</label>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-size">
                         <input class="mdl-textfield__input" type="text" id="email" runat="server">
-                        <label class="mdl-textfield__label" for="e-mail">Email</label>
+                        <label class="mdl-textfield__label" for="e-mail">Correo</label>
                     </div>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone submit-cell">
-                    <a href="/Default.aspx" class="login-link">I have already signed up</a>
+                    <a href="/Default.aspx" class="login-link">Ya tengo una cuenta</a>
                     <div class="mdl-layout-spacer"></div>
-                        <asp:Button id="submit" class="mdl-button mdl-js-button mdl-button--raised color--light-blue" runat="server" OnClick="signupService" Text="SIGN UP" />  
+                        <asp:Button id="submit" class="mdl-button mdl-js-button mdl-button--raised color--light-blue" runat="server" OnClick="signupService" Text="CREAR CUENTA" />  
                    </div>
             <div id="mensajes" class="mdl-card mdl-card__login mdl-shadow--2dp" runat="server"></div>
         

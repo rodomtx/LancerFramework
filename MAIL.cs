@@ -12,32 +12,34 @@ namespace Templeate_LIN
 
 
 
-       public  void enviar_correo()
+       public  void notificacionTarea(string _dirigidoA,string _textoTarea , string _liga)
         {
             SmtpClient smtp_server = new SmtpClient();
             MailMessage email = new MailMessage();
-           /* smtp_server.Port = 587;
-            smtp_server.EnableSsl = true;
-            smtp_server.Host = "smtp.office365.com";
-            smtp_server.Credentials = new System.Net.NetworkCredential("noreply@lancerworldwide.com", "Lancer@219");
-           */
             
             email.From = new MailAddress("noreply@lancerworldwide.com");
 
-
-
-           
             email.To.Add("rodolfo.martinez@lancercorp.com");
             email.CC.Add("rodolfo.martinez@lancerworldwide.com");
             email.Subject = "Test Mail LancerFramework";
             email.IsBodyHtml = true;
-            email.Body = this.correoHtml();
+            email.Body = this.cuerpoCorreoTarea(_dirigidoA, _textoTarea , _liga);
             smtp_server.Send(email);
 
+
+        
         }
 
+        /*
+         Subject
+         Link (rwID)
+         A que grupo va dirigido o las direcciones de correo?
+         Accion
+         
+         */
 
-        string correoHtml()
+
+        string cuerpoCorreoTarea(string dirigidoA, string textoTarea, string liga)
         {
             StringBuilder ans = new StringBuilder();
             ans.Append("<!DOCTYPE html>");
@@ -45,7 +47,7 @@ namespace Templeate_LIN
             ans.Append("<head>");
             ans.Append("    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>");
             ans.Append("    <meta name='Generator' content='Microsoft Word 14 (filtered)'>");
-            ans.Append("    <title></title>");
+            ans.Append("    <title> Una tarea fue asignada </title>");
             ans.Append("    <style>");
             ans.Append("        body {");
             ans.Append("            font-family: 'Segoe UI';");
@@ -61,7 +63,7 @@ namespace Templeate_LIN
             ans.Append("                    <td style='height:1px; width:100%; margin:0px 0px 0px 0px;'>");
             ans.Append("                        <br>");
             ans.Append("                        <center>");
-            ans.Append("                            <p style='font-family: 'Segoe UI'; font-size:28px; font-weight:300; color:#333333; text-align:center; border-bottom: 1px solid #F5F5F5; padding-bottom: 15px'>Rodolfo, se genero una solicitud de Retrabajo nueva</p>");
+            ans.Append("                            <p style='font-family: 'Segoe UI'; font-size:28px; font-weight:300; color:#333333; text-align:center; border-bottom: 1px solid #F5F5F5; padding-bottom: 15px'>" + dirigidoA +  ", es necesaria tu intervencion para continuar el proceso de retrabajo</p>");
             ans.Append("                        </center>");
             ans.Append("                        <br>");
             ans.Append("                    </td>");
@@ -69,8 +71,8 @@ namespace Templeate_LIN
             ans.Append("                <tr>");
             ans.Append("                    <td>");
             ans.Append("                        <center>");
-            ans.Append("                            <p style='font-family: 'Segoe UI'; font-size:25px; font-weight:300; color: #333333;'>Se necesita generar el Journal</p>");
-            ans.Append("                            <!---<p style='font-family: 'Segoe UI'; font-size:12px; font-weight:300; color: #333333;'>Public group with 13 members</p>-->");
+            ans.Append("                            <p style='font-family: 'Segoe UI'; font-size:25px; font-weight:300; color: #333333;'>"+textoTarea+"</p>");
+            ans.Append("                            <!---<p style='font-family: 'Segoe UI'; font-size:12px; font-weight:300; color: #333333;'></p>-->");
             ans.Append("                            <br>");
             ans.Append("                        </center>");
             ans.Append("                    </td>");
@@ -84,7 +86,7 @@ namespace Templeate_LIN
             ans.Append("                                        <tr>");
             ans.Append("                                            <td style='-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;padding-top:5px; padding-right:5px; padding-bottom:5px; padding-left:5px;' align='center' bgcolor='#1380ec'>");
             ans.Append("                                                <span>");
-            ans.Append("                                                    <a href='/retrabajos/rwHospital.aspx'  style='font-size: 15px; font-family: 'Segoe UI'; font-weight: 600; color: #070707; text-decoration: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding-top:5px; padding-right:5px; padding-bottom:5px; padding-left:5px; border: 1px solid #1380ec; display: inline-block;'>&nbsp;&nbsp;<!--[if mso]>&nbsp;&nbsp;&nbsp;<![endif]-->Proceder<!--[if mso]>&nbsp;&nbsp;&nbsp;<![endif]-->&nbsp;&nbsp;</a>");
+            ans.Append("                                                    <a href='http:\\192.168.60.222:82/retrabajos/rwSeguimiento.aspx?rwID=" + liga + "'  style='font-size: 15px; font-family: 'Segoe UI'; font-weight: 600; color: #070707; text-decoration: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding-top:5px; padding-right:5px; padding-bottom:5px; padding-left:5px; border: 1px solid #1380ec; display: inline-block;'>&nbsp;&nbsp; Continuar &nbsp;&nbsp;</a>");
             ans.Append("                                                </span>");
             ans.Append("                                            </td>");
             ans.Append("                                          ");
@@ -100,8 +102,7 @@ namespace Templeate_LIN
             ans.Append("                        <center>");
             ans.Append("                            <br>");
             ans.Append("                            <p style='height:80px; width:500px; font-family: 'Segoe UI';font-size: 16px; font-weight: 300; line-height: 1.25; text-align: left; color: #333333;'>");
-            ans.Append("                                Renew LMX_Back Shops before it expires on Thursday, January 7, 2021. If it isn't renewed, it will be deleted, along with all associated communications, files, calendar events, and tasks.");
-            ans.Append("                                You received this email because you're an owner of the group.");
+            ans.Append("                               Informacion Adicional ");
             ans.Append("                            </p><br>");
             ans.Append("                        </center>");
             ans.Append("                    </td>");

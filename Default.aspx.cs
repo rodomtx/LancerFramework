@@ -9,7 +9,7 @@ namespace Templeate_LIN
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        security seguridad = new security();
+        SECURITY seguridad = new SECURITY();
 
         protected void Page_Load(object sender, EventArgs e)
         {

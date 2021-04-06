@@ -5,13 +5,32 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>\\192.168.60.222\Andon</_PublishTargetUrl>
+    <History>True|2021-04-02T20:31:45.0941907Z;True|2021-03-30T14:24:44.5653493-05:00;False|2021-03-30T12:35:07.0493404-05:00;</History>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="andon/anAlertas.aspx">
+      <publishTime>01/12/2021 10:10:59</publishTime>
+    </File>
+    <File Include="andon/anIniciarAlerta.aspx">
+      <publishTime>01/12/2021 10:15:09</publishTime>
+    </File>
+    <File Include="andon/anResumen.aspx">
+      <publishTime>01/12/2021 10:15:47</publishTime>
+    </File>
+    <File Include="bancohielo/bhDashboard.aspx">
+      <publishTime>03/17/2021 16:36:37</publishTime>
+    </File>
+    <File Include="bancohielo/bhRealtime.aspx">
+      <publishTime>03/17/2021 16:36:34</publishTime>
+    </File>
+    <File Include="bancohielo/bhReportes.aspx">
+      <publishTime>03/17/2021 16:36:40</publishTime>
+    </File>
     <File Include="bin/Templeate_LIN.dll">
-      <publishTime>01/08/2021 15:48:28</publishTime>
+      <publishTime>04/02/2021 15:31:42</publishTime>
     </File>
     <File Include="bin/Templeate_LIN.pdb">
-      <publishTime>01/08/2021 15:48:28</publishTime>
+      <publishTime>04/02/2021 15:31:42</publishTime>
     </File>
     <File Include="css/application.min.css">
       <publishTime>01/04/2021 11:56:24</publishTime>
@@ -167,25 +186,25 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/07/2021 09:41:58</publishTime>
     </File>
     <File Include="retrabajos/rwInventory.aspx">
-      <publishTime>01/06/2021 14:55:37</publishTime>
+      <publishTime>01/14/2021 12:27:23</publishTime>
     </File>
     <File Include="retrabajos/rwRequest.aspx">
-      <publishTime>01/08/2021 10:28:52</publishTime>
+      <publishTime>04/02/2021 09:34:45</publishTime>
     </File>
     <File Include="retrabajos/rwSeguimiento.aspx">
-      <publishTime>01/08/2021 15:40:15</publishTime>
+      <publishTime>03/30/2021 12:34:43</publishTime>
     </File>
     <File Include="signin.aspx">
-      <publishTime>01/07/2021 10:57:46</publishTime>
+      <publishTime>01/08/2021 16:08:15</publishTime>
     </File>
     <File Include="signout.aspx">
       <publishTime>01/07/2021 09:09:53</publishTime>
     </File>
     <File Include="signup.aspx">
-      <publishTime>01/07/2021 11:00:16</publishTime>
+      <publishTime>01/08/2021 16:07:54</publishTime>
     </File>
     <File Include="Site.Master">
-      <publishTime>01/07/2021 17:06:42</publishTime>
+      <publishTime>03/17/2021 16:37:03</publishTime>
     </File>
     <File Include="template/404.html">
       <publishTime>01/04/2021 11:56:24</publishTime>
@@ -371,7 +390,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/04/2021 11:56:24</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/08/2021 14:27:20</publishTime>
+      <publishTime>01/15/2021 11:16:06</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -11,7 +11,7 @@ namespace Templeate_LIN.retrabajos
     public partial class reRequest : System.Web.UI.Page
     {
         CRUD crud = new CRUD();
-        security seguridad = new security();
+        SECURITY seguridad = new SECURITY();
         MAIL correo = new MAIL();
 
         protected void Page_Load(object sender, EventArgs e)
@@ -20,16 +20,21 @@ namespace Templeate_LIN.retrabajos
 
             supervisor.Value = Session["correo"].ToString();
             
-        foreach (areaItem a in crud.listaAreas())
+        
+        foreach (AREA a in crud.listaAreas())
             { 
             area.Items.Add(agregarListItem(a.descripcion ,a.centroCostos));
             }
 
+            foreach (RAZON r in crud.listaRazones())
+            {
+                ListRazones.Items.Add(agregarListItem(r.codigo.ToString(), r.descripcion));
+            }
 
         }
 
-        
-        
+
+
         public ListItem agregarListItem(string _texto,string _value)
         { /* esta funcion se usa para generar el objeto ListItem con el atributo de la clase ,
            se usa agregar las areas al menu de areas
@@ -48,18 +53,16 @@ namespace Templeate_LIN.retrabajos
         {
             if (seguridad.VerificarAcceso(Session["correo"].ToString(), 2))
             {
-                if (crud.solicitarRetrabajo("rework", supervisor.Value, descripcion.Value, machineSN.Value, area.SelectedValue, coldplateSN.Value))
-                {
 
-                    correo.enviar_correo();
-                    
+                    correo.notificacionTarea(  Session["nombre"].ToString(),
+                                                "Se necesita generar Journal",
+                                                crud.solicitarRetrabajo("rework", machinePN.Value, machineSN.Value, coldplateSN.Value, supervisor.Value, area.SelectedValue, ListRazones.SelectedValue)
+                                                );
                     Response.Redirect("/retrabajos/rwInventory.aspx");
-                }
-
             }
             else
             {
-                avisos.InnerHtml+= "<p> <span class='color-text--green'>Denied Access</span></p>";
+                avisos.InnerHtml+= "<p> <span class='color-text--green'>La cuenta no tiene privilegios para realizar esta operacion.</span></p>";
             }
         }
 

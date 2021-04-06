@@ -121,13 +121,13 @@
                 <li class="mdl-menu__item mdl-list__item">
                     <span class="mdl-list__item-primary-content">
                         <i class="material-icons mdl-list__item-icon">account_circle</i>
-                        My account
+                        Mi cuenta
                     </span>
                 </li>
                 <li class="mdl-menu__item mdl-list__item">
                     <span class="mdl-list__item-primary-content">
                         <i class="material-icons mdl-list__item-icon">check_box</i>
-                        My tasks
+                        Mis tareas
                     </span>
                     <span class="mdl-list__item-secondary-content">
                       <span class="label background-color--primary">3 new</span>
@@ -137,14 +137,14 @@
                 <li class="mdl-menu__item mdl-list__item">
                     <span class="mdl-list__item-primary-content">
                         <i class="material-icons mdl-list__item-icon">settings</i>
-                        Settings
+                        Configuraciones
                     </span>
                 </li>
                 <a href="/signout.aspx">
                     <li class="mdl-menu__item mdl-list__item">
                         <span class="mdl-list__item-primary-content">
                             <i class="material-icons mdl-list__item-icon text-color--secondary">exit_to_app</i>
-                            Log out
+                            Cerrar Sesion
                         </span>
                     </li>
                 </a>
@@ -176,7 +176,7 @@
             <div class="scroller" id="scroller">
                 <div class="scroll__container" id="scroll__container">
                     <nav class="mdl-navigation">
-                        <a class="mdl-navigation__link mdl-navigation__link--current" href="index.aspx">
+                        <a class="mdl-navigation__link mdl-navigation__link--current" href="/Default.aspx">
                             <i class="material-icons" role="presentation">dashboard</i>
                             Dashboard
                         </a>
@@ -206,14 +206,14 @@
                                 <i class="material-icons">keyboard_arrow_down</i>
                             </a>
                             <div class="mdl-navigation">
-                                <a class="mdl-navigation__link" href="ui-buttons.html">
+                                <a class="mdl-navigation__link" href="/andon/anAlertas.aspx">
                                     Alertas Andon   
                                 </a>
-                                <a class="mdl-navigation__link" href="ui-cards.html">
-                                    Configuracon
+                                <a class="mdl-navigation__link" href="/andon/anIniciarAlerta.aspx">
+                                    Iniciar Alerta
                                 </a>
-                                <a class="mdl-navigation__link" href="ui-colors.html">
-                                    Summary
+                                <a class="mdl-navigation__link" href="/andon/anResumen.aspx">
+                                    Resumen
                                 </a>
                                 
                             </div>
@@ -223,21 +223,24 @@
                           <div class="sub-navigation">
                             <a class="mdl-navigation__link">
                                 <i class="material-icons">local_hospital</i>
-                                ReWorks Management
+                                Control de Retrabajos
                                 <i class="material-icons">keyboard_arrow_down</i>
                             </a>
                             <div class="mdl-navigation">
                                 <a class="mdl-navigation__link" href="/retrabajos/rwRequest.aspx">
-                                    Request ReWork   
+                                    Solicitar retrabjo
+                                </a>
+                                <a class="mdl-navigation__link" href="/retrabajos/rwHospital.aspx">
+                                    Detalles retrabajo
                                 </a>
                                 <a class="mdl-navigation__link" href="/retrabajos/rwHospital.aspx">
                                     Hospital
                                 </a>
                                 <a class="mdl-navigation__link" href="/retrabajos/rwFoundry.aspx">
-                                    Foundry
+                                    Fundidora
                                 </a>
-                                <a class="mdl-navigation__link" href="rwSummary.aspx">
-                                    Summary
+                                <a class="mdl-navigation__link" href="rwInventory.aspx">
+                                    Resumen
                                 </a>
                                 
                             </div>
@@ -246,18 +249,18 @@
                           <div class="sub-navigation">
                             <a class="mdl-navigation__link">
                                 <i class="material-icons">multiline_chart</i>
-                                Ice Bank Data
+                                Banco de hielo
                                 <i class="material-icons">keyboard_arrow_down</i>
                             </a>
                             <div class="mdl-navigation">
-                                <a class="mdl-navigation__link" href="ui-buttons.html">
-                                    Alertas Andon   
+                                <a class="mdl-navigation__link" href="/bancohielo/bhDashboard.aspx">
+                                    Dashboard
                                 </a>
-                                <a class="mdl-navigation__link" href="ui-cards.html">
-                                    Configuracon
+                                <a class="mdl-navigation__link" href="/bancohielo/bhRealtime.aspx">
+                                    Tiempo Real
                                 </a>
-                                <a class="mdl-navigation__link" href="ui-colors.html">
-                                    Summary
+                                <a class="mdl-navigation__link" href="/bancohielo/bhReportes.aspx">
+                                    Reportes
                                 </a>
                                 
                             </div>
@@ -271,13 +274,13 @@
                             </a>
                             <div class="mdl-navigation">
                                 <a class="mdl-navigation__link" href="ui-buttons.html">
-                                    Alertas Andon   
+                                    Pendiente
                                 </a>
                                 <a class="mdl-navigation__link" href="ui-cards.html">
-                                    Configuracon
+                                    Pendiente
                                 </a>
                                 <a class="mdl-navigation__link" href="ui-colors.html">
-                                    Summary
+                                    Pendiente
                                 </a>
                                 
                             </div>

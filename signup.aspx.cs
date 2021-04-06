@@ -11,7 +11,7 @@ namespace Templeate_LIN
 {
     public partial class signup : System.Web.UI.Page
     {
-        security seguridad = new security();
+        SECURITY seguridad = new SECURITY();
 
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -5,14 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Templeate_LIN.retrabajos
+namespace Templeate_LIN.bancohielo
 {
-    public partial class rwHospital : System.Web.UI.Page
+    public partial class dashboard : System.Web.UI.Page
     {
-        SECURITY seguridad = new SECURITY();
         protected void Page_Load(object sender, EventArgs e)
         {
-            seguridad.verify();
+
         }
     }
 }

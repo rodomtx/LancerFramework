@@ -50,26 +50,26 @@
                             <span class="mdl-card__title-text text-color--smooth-gray">Lancer Framework</span>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
-                            <span class="login-name text-color--white">Sign in</span>
-                            <span class="login-secondary-text text-color--smoke">Enter fields to sign in to Lancer Framework</span>
+                            <span class="login-name text-color--white">Iniciar sesion</span>
+                            <span class="login-secondary-text text-color--smoke">Captura las credenciales para iniciar sesion</span>
                         </div>
                         
                         <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-size">
                                 <input class="mdl-textfield__input" type="text" id="email" runat="server">
-                                <label class="mdl-textfield__label" for="e-mail">Email</label>
+                                <label class="mdl-textfield__label" for="e-mail">Correo</label>
                             </div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-size">
                                 <input class="mdl-textfield__input" type="password" id="password" runat="server">
-                                <label class="mdl-textfield__label" for="password">Password</label>
+                                <label class="mdl-textfield__label" for="password">Contrasena</label>
                             </div>
-                            <a href="recoverpassword.aspx" class="login-link">Forgot password?</a>
+                            <a href="recoverpassword.aspx" class="login-link">Olvidaste la contrasena?</a>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone submit-cell">
-                            <a href="signup.aspx" class="login-link">Don't have account?</a>
+                            <a href="signup.aspx" class="login-link">No tienes cuenta?</a>
                             <div class="mdl-layout-spacer"></div>
                             
-                            <asp:Button id="singn" class="mdl-button mdl-js-button mdl-button--raised color--light-blue" runat="server" OnClick="signinService" Text="SIGN IN" />   
+                            <asp:Button id="singn" class="mdl-button mdl-js-button mdl-button--raised color--light-blue" runat="server" OnClick="signinService" Text="INICIAR SESION" />   
                             
                         </div>
          <!--- Seccion de ventana de mensajes ---->

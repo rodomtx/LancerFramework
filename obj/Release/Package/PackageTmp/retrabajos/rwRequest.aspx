@@ -7,45 +7,45 @@
         <div class="mdl-card__title" >
             <!--- Titulo Subtitulo de la forma --->
            
-            <h2>Request ReWork</h2>
-                   <div class="mdl-card__subtitle">Please complete the form</div>
+            <h2>Solicitar retrabajo</h2>
+                   <div class="mdl-card__subtitle">Por favor complete los datos de la solicitud</div>
                 </div>
             
                 <div class="mdl-card__supporting-text">
                     <form action="#" class="form" runat="server">
                         <div class="form__article">
                         <!--- Separador Seccion Finish Goos --->
-                            <h3>Finish Good Information</h3>
+                            <h3>Informacion de la maquina</h3>
 
                             <!--- Machine Part Number --->
                             <div class="mdl-grid">
                                 <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                     <!--- Input Machine Part Number --->
-                                    <input class="mdl-textfield__input" type="text" id="machinePN" value="85-9598-ps" runat="server"/>
-                                    <label class="mdl-textfield__label" for="firstName">Machine Part Number</label>
+                                    <input class="mdl-textfield__input" type="text" id="machinePN" value="Modelo" runat="server"/>
+                                    <label class="mdl-textfield__label" for="firstName">Modelo Maquina</label>
                                 </div>
 
                                 <!--- Machine Serial Number --->
                                 <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                     <!--- machine Serial Number --->
-                                    <input class="mdl-textfield__input" type="text" id="machineSN" value="ZLN123" runat="server" />
-                                    <label class="mdl-textfield__label" for="secondName">Machine Serial Number</label>
+                                    <input class="mdl-textfield__input" type="text" id="machineSN" value="ZLN" runat="server" />
+                                    <label class="mdl-textfield__label" for="secondName">Serie Maquina</label>
                                 </div>
                             </div>
                             <!--- Separador Seccion cold plate --->
-                            <h3>Cold Plate Information</h3>
+                            <h3>Informacion Cold Plate</h3>
 
                             <div class="mdl-grid">
                                 <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                     <!--- Input ColdPlate Serial --->
                                     <input class="mdl-textfield__input" type="text" id="coldplateSN" value="0112345" runat="server" />
-                                    <label class="mdl-textfield__label" for="firstName">ColdPlate Serial</label>
+                                    <label class="mdl-textfield__label" for="firstName">Serie Cold Plate</label>
                                 </div>
                             </div>
 
                             <!--- Separador Request Information --->
                         <div class="form__article">
-                            <h3>Request Information</h3>
+                            <h3>Informacion Solicitante</h3>
                             <div class="mdl-grid">
                                 <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                     <!--- Input Supervisor --->
@@ -59,26 +59,23 @@
                                    
                                     <asp:DropDownList id="area" runat="server" class="mdl-textfield__input">
                                           
-                                          
                                     </asp:DropDownList>
-                                    
-                                </div>
+                               </div>
                         </div>
-
-                           
-                       <!--- Separador Seccion Details --->
+                        
+                            <!--- Separador Seccion Details --->
                         <div class="form__article employer-form__general_skills">
-                            <h3>Details</h3>
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <h3>Motivo del retrabajo</h3>
+                            <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
                                 <!--- Input Details --->
-                                <textarea class="mdl-textfield__input" type="text" rows="3" id="descripcion" runat="server"></textarea>
-                                <label class="mdl-textfield__label" for="description">Describe the reason for request rework</label>
+                                <asp:DropDownList id="ListRazones" runat="server" class="mdl-textfield__input">
+                                 </asp:DropDownList>
                             </div>
                         </div>
                        
                             <div class="form__action">
                             <!--- Boton Submit de la forma --->
-                            <asp:Button ID="submit" class="mdl-button mdl-js-button mdl-button--raised color--light-blue" runat="server" OnClick="solicitarRetrabajo" Text="Request" />
+                            <asp:Button ID="submit" class="mdl-button mdl-js-button mdl-button--raised color--light-blue" runat="server" OnClick="solicitarRetrabajo" Text="SOLICITAR" />
                           </div>
                     </form>
                 </div>
