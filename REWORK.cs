@@ -19,6 +19,7 @@ namespace Templeate_LIN
         public int journalGenerado;
         public string journalGeneradoMedida;
         public string journalGeneradoFlag;
+        
         public int hospitalRecibo;
         public string hospitalReciboMedida;
         public string hospitalReciboFlag;
@@ -39,6 +40,9 @@ namespace Templeate_LIN
         public string inseccionHospitalMedida;
         public string inseccionHospitalflag;
 
+        public int entregada;
+        public string entregadaMedida;
+        public string entregadaflag;
 
         public REWORK(       
         int _operacionSeq,
@@ -73,7 +77,11 @@ namespace Templeate_LIN
 
         int _inseccionHospital,
         string _inseccionHospitalMedida,
-        string _inseccionHospitalflag
+        string _inseccionHospitalflag,
+
+        int _entregada,
+        string _entregadaMedida,
+        string _entregadaflag
 
             )
         {
@@ -110,7 +118,11 @@ namespace Templeate_LIN
         this.inseccionHospital = _inseccionHospital;
         this.inseccionHospitalMedida = _inseccionHospitalMedida;
         this.inseccionHospitalflag = _inseccionHospitalflag;
-    }
+
+            this.entregada = _entregada;
+            this.entregadaMedida = _entregadaMedida;
+            this.entregadaflag = _entregadaflag;
+        }
 
     }
 }

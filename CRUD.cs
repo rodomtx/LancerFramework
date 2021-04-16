@@ -122,6 +122,7 @@ namespace Templeate_LIN
                                             this.rdr.GetString(1), 
                                             this.rdr.GetString(2),
                                             this.rdr.GetDateTime(3),
+                                            
                                             this.rdr.GetString(4),
                                             this.rdr.GetString(5),
                                             this.rdr.GetString(6),
@@ -148,7 +149,12 @@ namespace Templeate_LIN
 
                                             this.rdr.GetInt32(22),
                                             this.rdr.GetString(23),
-                                            this.rdr.GetString(24)
+                                            this.rdr.GetString(24),
+
+                                               this.rdr.GetInt32(25),
+                                            this.rdr.GetString(26),
+                                            this.rdr.GetString(27)
+
 
                                             ));
 
@@ -381,6 +387,79 @@ namespace Templeate_LIN
                 catch (Exception e)
                 {
                     Console.WriteLine("*** SQL.ListaBuildorder) - " + e.Message + " ***");
+                }
+                finally
+                {
+                    this.sql_conexion.Close();
+                }
+            }
+
+            return ans;
+        }
+
+        public bool actualizarRetrabajo(int _operacionRaiz, string _operacion, string _observacion , string _usuario)
+        {
+            bool ans = true;
+
+            if (this.Test())
+            {
+                this.command = new SqlCommand("dbo.rwActualizar", this.sql_conexion);
+                this.command.Parameters.Add(new SqlParameter("@operacionRaiz", _operacionRaiz));
+                this.command.Parameters.Add(new SqlParameter("@operacion", _operacion));
+                this.command.Parameters.Add(new SqlParameter("@observacion", _observacion));
+                this.command.Parameters.Add(new SqlParameter("@usuario", _usuario));
+                
+                this.command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                try
+                {
+                    this.sql_conexion.Open();
+                    this.command.ExecuteNonQuery();
+                    this.sql_conexion.Close();
+                    ans = true;
+                }
+                catch (Exception e)
+                {
+                    ans = false;
+                }
+            }
+            else
+            { ans = false; }
+
+            return ans;
+            /*
+             * ans true todo OK , ans false = hubo mermas
+             */
+        }
+
+        public List<BUSQUEDARW> listaBusqueda(string _parametro , string _tipo)
+        {
+
+            List<BUSQUEDARW> ans = new List<BUSQUEDARW>();
+
+            if (this.Test())
+            {
+                this.command = new SqlCommand("dbo.rwBusqueda", sql_conexion);
+                this.command.Parameters.Add(new SqlParameter("@parametro", _parametro));
+                this.command.Parameters.Add(new SqlParameter("@tipo", _tipo));
+
+                this.command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                this.sql_conexion.Open();
+                
+                this.rdr = this.command.ExecuteReader();
+
+                try
+                {
+                    while (this.rdr.Read())
+                    {
+                        ans.Add(new BUSQUEDARW(this.rdr.GetInt32(0), this.rdr.GetString(1), this.rdr.GetDateTime(2), this.rdr.GetString(3), this.rdr.GetString(4), this.rdr.GetString(5), this.rdr.GetString(6)));
+
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("*** SQL.listaBusqueda) - " + e.Message + " ***");
                 }
                 finally
                 {

@@ -61,6 +61,9 @@
     <Content Include="bancohielo\bhDashboard.aspx" />
     <Content Include="bancohielo\bhRealtime.aspx" />
     <Content Include="bancohielo\bhReportes.aspx" />
+    <Content Include="retrabajos\rwRastreo.aspx" />
+    <Content Include="retrabajos\rwResultados.aspx" />
+    <Content Include="retrabajos\rwUpdate.aspx" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -234,6 +237,7 @@
     <Compile Include="bancohielo\bhReportes.aspx.designer.cs">
       <DependentUpon>bhReportes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BUSQUEDARW.cs" />
     <Compile Include="CRUD.cs" />
     <Compile Include="MAIL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -252,6 +256,13 @@
     <Compile Include="retrabajos\rwInventory.aspx.designer.cs">
       <DependentUpon>rwInventory.aspx</DependentUpon>
     </Compile>
+    <Compile Include="retrabajos\rwRastreo.aspx.cs">
+      <DependentUpon>rwRastreo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="retrabajos\rwRastreo.aspx.designer.cs">
+      <DependentUpon>rwRastreo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="retrabajos\rwRequest.aspx.cs">
       <DependentUpon>rwRequest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -259,12 +270,26 @@
     <Compile Include="retrabajos\rwRequest.aspx.designer.cs">
       <DependentUpon>rwRequest.aspx</DependentUpon>
     </Compile>
+    <Compile Include="retrabajos\rwResultados.aspx.cs">
+      <DependentUpon>rwResultados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="retrabajos\rwResultados.aspx.designer.cs">
+      <DependentUpon>rwResultados.aspx</DependentUpon>
+    </Compile>
     <Compile Include="retrabajos\rwSeguimiento.aspx.cs">
       <DependentUpon>rwSeguimiento.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="retrabajos\rwSeguimiento.aspx.designer.cs">
       <DependentUpon>rwSeguimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="retrabajos\rwUpdate.aspx.cs">
+      <DependentUpon>rwUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="retrabajos\rwUpdate.aspx.designer.cs">
+      <DependentUpon>rwUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="REWORDETAILS.cs" />
     <Compile Include="REWORK.cs" />

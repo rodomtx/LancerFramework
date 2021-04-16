@@ -51,7 +51,7 @@ namespace Templeate_LIN.retrabajos
 
         protected void solicitarRetrabajo(object sender, EventArgs e)
         {
-            if (seguridad.VerificarAcceso(Session["correo"].ToString(), 2))
+            if (seguridad.VerificarAcceso(Session["correo"].ToString(), 1))
             {
 
                     correo.notificacionTarea(  Session["nombre"].ToString(),

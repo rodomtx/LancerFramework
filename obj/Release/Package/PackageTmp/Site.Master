@@ -230,8 +230,8 @@
                                 <a class="mdl-navigation__link" href="/retrabajos/rwRequest.aspx">
                                     Solicitar retrabjo
                                 </a>
-                                <a class="mdl-navigation__link" href="/retrabajos/rwHospital.aspx">
-                                    Detalles retrabajo
+                                <a class="mdl-navigation__link" href="/retrabajos/rwRastreo.aspx">
+                                    Seguimiento
                                 </a>
                                 <a class="mdl-navigation__link" href="/retrabajos/rwHospital.aspx">
                                     Hospital
@@ -239,8 +239,8 @@
                                 <a class="mdl-navigation__link" href="/retrabajos/rwFoundry.aspx">
                                     Fundidora
                                 </a>
-                                <a class="mdl-navigation__link" href="rwInventory.aspx">
-                                    Resumen
+                                <a class="mdl-navigation__link" href="/retrabajos/rwInventory.aspx">
+                                    En transito
                                 </a>
                                 
                             </div>

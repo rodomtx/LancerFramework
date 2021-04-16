@@ -28,7 +28,21 @@ namespace Templeate_LIN.retrabajos
                 cuerpoTablaRetrabajos.InnerHtml += "                               <td class='mdl-data-table__cell--non-numeric'>"+ri.operacionSeq+"</td>";
                 cuerpoTablaRetrabajos.InnerHtml += "                               <td class='mdl-data-table__cell--non-numeric'>"+ri.lineaSolicita+"</td>";
                 cuerpoTablaRetrabajos.InnerHtml += "                               <td class='mdl-data-table__cell--non-numeric'>"+ri.originador+"</td>";
-                cuerpoTablaRetrabajos.InnerHtml += "                               <td class='mdl-data-table__cell--non-numeric'>"+ri.fechaCreacion.ToString("MMM dd hh:mm tt")+"</td>";
+
+                if (esHoy(ri.fechaCreacion))
+                {
+
+
+
+                    cuerpoTablaRetrabajos.InnerHtml += "                               <td class='mdl-data-table__cell--non-numeric'>" + ri.fechaCreacion.ToString("hh:mm tt") + "</td>";
+                }
+                else
+                {
+                    cuerpoTablaRetrabajos.InnerHtml += "                               <td class='mdl-data-table__cell--non-numeric'>" + ri.fechaCreacion.ToString("MMM dd hh:mm tt") + "</td>";
+                }
+                
+                
+                
                 if (ri.journalGeneradoMedida != "vacio")
                 {
                     cuerpoTablaRetrabajos.InnerHtml += "                               <td class='mdl-data-table__cell--non-numeric'><span class='label label--mini color--" + ri.journalGeneradoFlag + "'>" + ri.journalGenerado + " " + ri.journalGeneradoMedida + "</span> </td>";
@@ -93,5 +107,24 @@ namespace Templeate_LIN.retrabajos
 
 
         }
+        
+        
+        bool esHoy(DateTime _fecha)
+        {
+            bool ans = false;
+            if ((_fecha.Year == DateTime.Now.Year) && (_fecha.Day == DateTime.Now.Day) && (_fecha.Month == DateTime.Now.Month))
+            {
+                ans = true;
+            }
+            else
+            {
+                ans = false;
+            }
+
+
+            return ans;
+
+        }
     }
+
 }
