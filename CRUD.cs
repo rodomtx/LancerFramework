@@ -100,7 +100,7 @@ namespace Templeate_LIN
            
         }
 
-        public List<REWORK> listaReworkItems()
+        public List<REWORK> listaReworkTransito()
         {
 
             List<REWORK> ans = new List<REWORK>();
@@ -135,6 +135,152 @@ namespace Templeate_LIN
                                             this.rdr.GetString(11),
                                             this.rdr.GetString(12),
                                             
+                                            this.rdr.GetInt32(13),
+                                            this.rdr.GetString(14),
+                                            this.rdr.GetString(15),
+
+                                            this.rdr.GetInt32(16),
+                                            this.rdr.GetString(17),
+                                            this.rdr.GetString(18),
+
+                                            this.rdr.GetInt32(19),
+                                            this.rdr.GetString(20),
+                                            this.rdr.GetString(21),
+
+                                            this.rdr.GetInt32(22),
+                                            this.rdr.GetString(23),
+                                            this.rdr.GetString(24),
+
+                                               this.rdr.GetInt32(25),
+                                            this.rdr.GetString(26),
+                                            this.rdr.GetString(27)
+
+
+                                            ));
+
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("*** SQL.ListaBuildorder) - " + e.Message + " ***");
+                }
+                finally
+                {
+                    this.sql_conexion.Close();
+                }
+            }
+
+            return ans;
+        }
+
+        public List<REWORK> listaReworkHospital()
+        {
+
+            List<REWORK> ans = new List<REWORK>();
+
+            if (this.Test())
+            {
+                this.command = new SqlCommand("dbo.rwHospital", sql_conexion);
+                this.command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                this.sql_conexion.Open();
+                this.rdr = this.command.ExecuteReader();
+
+                try
+                {
+                    while (this.rdr.Read())
+                    {
+                        ans.Add(new REWORK(
+                                            this.rdr.GetInt32(0),
+                                            this.rdr.GetString(1),
+                                            this.rdr.GetString(2),
+                                            this.rdr.GetDateTime(3),
+
+                                            this.rdr.GetString(4),
+                                            this.rdr.GetString(5),
+                                            this.rdr.GetString(6),
+
+                                            this.rdr.GetInt32(7),
+                                            this.rdr.GetString(8),
+                                            this.rdr.GetString(9),
+
+                                            this.rdr.GetInt32(10),
+                                            this.rdr.GetString(11),
+                                            this.rdr.GetString(12),
+
+                                            this.rdr.GetInt32(13),
+                                            this.rdr.GetString(14),
+                                            this.rdr.GetString(15),
+
+                                            this.rdr.GetInt32(16),
+                                            this.rdr.GetString(17),
+                                            this.rdr.GetString(18),
+
+                                            this.rdr.GetInt32(19),
+                                            this.rdr.GetString(20),
+                                            this.rdr.GetString(21),
+
+                                            this.rdr.GetInt32(22),
+                                            this.rdr.GetString(23),
+                                            this.rdr.GetString(24),
+
+                                               this.rdr.GetInt32(25),
+                                            this.rdr.GetString(26),
+                                            this.rdr.GetString(27)
+
+
+                                            ));
+
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("*** SQL.ListaBuildorder) - " + e.Message + " ***");
+                }
+                finally
+                {
+                    this.sql_conexion.Close();
+                }
+            }
+
+            return ans;
+        }
+
+        public List<REWORK> listaReworkFundidora()
+        {
+
+            List<REWORK> ans = new List<REWORK>();
+
+            if (this.Test())
+            {
+                this.command = new SqlCommand("dbo.rwFundidora", sql_conexion);
+                this.command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                this.sql_conexion.Open();
+                this.rdr = this.command.ExecuteReader();
+
+                try
+                {
+                    while (this.rdr.Read())
+                    {
+                        ans.Add(new REWORK(
+                                            this.rdr.GetInt32(0),
+                                            this.rdr.GetString(1),
+                                            this.rdr.GetString(2),
+                                            this.rdr.GetDateTime(3),
+
+                                            this.rdr.GetString(4),
+                                            this.rdr.GetString(5),
+                                            this.rdr.GetString(6),
+
+                                            this.rdr.GetInt32(7),
+                                            this.rdr.GetString(8),
+                                            this.rdr.GetString(9),
+
+                                            this.rdr.GetInt32(10),
+                                            this.rdr.GetString(11),
+                                            this.rdr.GetString(12),
+
                                             this.rdr.GetInt32(13),
                                             this.rdr.GetString(14),
                                             this.rdr.GetString(15),
@@ -469,6 +615,44 @@ namespace Templeate_LIN
 
             return ans;
         }
+
+        public List<string> listaCorreosPermiso(string _permiso)
+        {
+
+            List<string> ans = new List<string>();
+
+            if (this.Test())
+            {
+                this.command = new SqlCommand("dbo.rwDireccionesPorPermisos", sql_conexion);
+                this.command.Parameters.Add(new SqlParameter("@permiso", _permiso));
+                
+                this.command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                this.sql_conexion.Open();
+
+                this.rdr = this.command.ExecuteReader();
+
+                try
+                {
+                    while (this.rdr.Read())
+                    {
+                        ans.Add(this.rdr.GetString(0) );
+
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("*** SQL.listaBusqueda) - " + e.Message + " ***");
+                }
+                finally
+                {
+                    this.sql_conexion.Close();
+                }
+            }
+
+            return ans;
+        }
+
     }
 
 }

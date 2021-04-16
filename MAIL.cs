@@ -19,9 +19,9 @@ namespace Templeate_LIN
             
             email.From = new MailAddress("noreply@lancerworldwide.com");
 
-            email.To.Add("rodolfo.martinez@lancercorp.com");
+            email.To.Add(_dirigidoA);
             email.CC.Add("rodolfo.martinez@lancerworldwide.com");
-            email.Subject = "Test Mail LancerFramework";
+            email.Subject = "Lancer Framework - Tarea Asignada";
             email.IsBodyHtml = true;
             email.Body = this.cuerpoCorreoTarea(_dirigidoA, _textoTarea , _liga);
             smtp_server.Send(email);

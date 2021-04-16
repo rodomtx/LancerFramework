@@ -54,10 +54,14 @@ namespace Templeate_LIN.retrabajos
             if (seguridad.VerificarAcceso(Session["correo"].ToString(), 1))
             {
 
-                    correo.notificacionTarea(  Session["nombre"].ToString(),
+                foreach (string _direccion in crud.listaCorreosPermiso("2"))
+                {
+
+                    correo.notificacionTarea(_direccion,
                                                 "Se necesita generar Journal",
                                                 crud.solicitarRetrabajo("rework", machinePN.Value, machineSN.Value, coldplateSN.Value, supervisor.Value, area.SelectedValue, ListRazones.SelectedValue)
                                                 );
+                }
                     Response.Redirect("/retrabajos/rwInventory.aspx");
             }
             else

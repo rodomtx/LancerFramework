@@ -22,7 +22,7 @@ namespace Templeate_LIN.retrabajos
 
         void tabla()
         {
-            foreach (REWORK ri in crud.listaReworkItems())
+            foreach (REWORK ri in crud.listaReworkTransito())
             {
                 cuerpoTablaRetrabajos.InnerHtml += "                            <tr>";
                 cuerpoTablaRetrabajos.InnerHtml += "                               <td class='mdl-data-table__cell--non-numeric'>"+ri.operacionSeq+"</td>";

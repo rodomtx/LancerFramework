@@ -26,6 +26,10 @@ namespace Templeate_LIN.retrabajos
 
 
             }
+            else
+            {
+                Response.Redirect("/retrabajos/rwInventory.aspx");
+            }
 
 
 
@@ -56,9 +60,13 @@ namespace Templeate_LIN.retrabajos
                     cuerpoTablaBusqueda.InnerHtml += "                               <td class='mdl-data-table__cell--non-numebrwc'>" + brw.machineSN + "</td>";
                     cuerpoTablaBusqueda.InnerHtml += "                               <td class='mdl-data-table__cell--non-numebrwc'>" + brw.coldplateSN + "</td>";
                     cuerpoTablaBusqueda.InnerHtml += "                               <td class='mdl-data-table__cell--non-numebrwc'>" + brw.descripcion + "</td>";
+
+                    cuerpoTablaBusqueda.InnerHtml += "                              <td class='mdl-data-table__cell--non-numeric'><a href =/retrabajos/rwSeguimiento.aspx?rwID=" + brw.operacion.ToString()  + "><i class='material-icons'>search</i></a></td>";
                     cuerpoTablaBusqueda.InnerHtml += "                            </tr>";
 
+                 
                 }
+
 
             }
 

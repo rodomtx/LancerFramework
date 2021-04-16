@@ -23,19 +23,21 @@ namespace Templeate_LIN.retrabajos
 
         protected void rwBusquedaRWID(object sender, EventArgs e)
         {
-        
+
+
+            Response.Redirect("/retrabajos/rwResultados.aspx?parametro=" + retrabajo.Value+"&tipo=rwID"); 
         }
 
 
         protected void rwBusquedaColdplateSN(object sender, EventArgs e)
         {
-            
+            Response.Redirect("/retrabajos/rwResultados.aspx?parametro=" + coldplate.Value + "&tipo=coldplateSN");
         }
 
 
         protected void rwBusquedaMachineSN(object sender, EventArgs e)
         {
-
+            Response.Redirect("/retrabajos/rwResultados.aspx?parametro=" + machinesn.Value + "&tipo=machineSN");
         }
     }
 }

@@ -160,7 +160,7 @@
                 <li class="mdl-menu__item">
                     Settings
                 </li>
-                <a class="mdl-menu__item" href="https://github.com/CreativeIT/getmdl-dashboard/issues">
+                <a class="mdl-menu__item" href="#">
                     Support
                 </a>
                 <li class="mdl-menu__item">
@@ -183,18 +183,18 @@
                         <div class="sub-navigation">
                             <a class="mdl-navigation__link">
                                 <i class="material-icons">add_alert</i>
-                                Paro de Linea
+                                Paro de Linea 
                                 <i class="material-icons">keyboard_arrow_down</i>
                             </a>
                             <div class="mdl-navigation">
                                 <a class="mdl-navigation__link" href="ui-buttons.html">
-                                    Alertas PPL   
+                                    Alertas PPL   - Pendiente
                                 </a>
                                 <a class="mdl-navigation__link" href="ui-cards.html">
-                                    Iniciar PPL
+                                    Iniciar PPL - Pendiente
                                 </a>
                                 <a class="mdl-navigation__link" href="ui-colors.html">
-                                    Cerrar PPL
+                                    Cerrar PPL - Pendiente
                                 </a>
                                 
                             </div>
@@ -207,13 +207,13 @@
                             </a>
                             <div class="mdl-navigation">
                                 <a class="mdl-navigation__link" href="/andon/anAlertas.aspx">
-                                    Alertas Andon   
+                                    Alertas Andon   - Pendiente
                                 </a>
                                 <a class="mdl-navigation__link" href="/andon/anIniciarAlerta.aspx">
-                                    Iniciar Alerta
+                                    Iniciar Alerta - Pendiente
                                 </a>
                                 <a class="mdl-navigation__link" href="/andon/anResumen.aspx">
-                                    Resumen
+                                    Resumen - Pendiente
                                 </a>
                                 
                             </div>
@@ -254,13 +254,13 @@
                             </a>
                             <div class="mdl-navigation">
                                 <a class="mdl-navigation__link" href="/bancohielo/bhDashboard.aspx">
-                                    Dashboard
+                                    Dashboard - Pendiente
                                 </a>
                                 <a class="mdl-navigation__link" href="/bancohielo/bhRealtime.aspx">
-                                    Tiempo Real
+                                    Tiempo Real - Pendiente
                                 </a>
                                 <a class="mdl-navigation__link" href="/bancohielo/bhReportes.aspx">
-                                    Reportes
+                                    Reportes - Pendiente
                                 </a>
                                 
                             </div>

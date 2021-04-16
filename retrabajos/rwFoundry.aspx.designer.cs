@@ -11,7 +11,7 @@ namespace Templeate_LIN.retrabajos
 {
 
 
-    public partial class rwHospital
+    public partial class rwFoundry
     {
 
         /// <summary>

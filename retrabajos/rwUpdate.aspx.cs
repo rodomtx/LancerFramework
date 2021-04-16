@@ -108,11 +108,20 @@ namespace Templeate_LIN.retrabajos
 
             return ans;
         }
+       
         protected void actualizarRW(object sender, EventArgs e)
         {
             if (seguridad.VerificarAcceso(Session["correo"].ToString(), operacionesPermisos(rwOp)))
             {
                 crud.actualizarRetrabajo(rwID, traducirOperaciones(rwOp), "", Session["correo"].ToString());
+                
+            
+            foreach (string direccion in crud.listaCorreosPermiso((operacionesPermisos(rwOp)+1).ToString()))
+            {
+                    correo.notificacionTarea(direccion, rwOp.Replace("_"," "), rwID.ToString());   
+                
+                }
+
                 Response.Redirect("/retrabajos/rwInventory.aspx");
             }
             else

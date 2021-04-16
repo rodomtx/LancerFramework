@@ -13,5 +13,32 @@ namespace Templeate_LIN.retrabajos
 
     public partial class rwRastreo
     {
+
+        /// <summary>
+        /// machinesn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText machinesn;
+
+        /// <summary>
+        /// coldplate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText coldplate;
+
+        /// <summary>
+        /// retrabajo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText retrabajo;
     }
 }

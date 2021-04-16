@@ -61,6 +61,7 @@
     <Content Include="bancohielo\bhDashboard.aspx" />
     <Content Include="bancohielo\bhRealtime.aspx" />
     <Content Include="bancohielo\bhReportes.aspx" />
+    <Content Include="retrabajos\rwFoundry.aspx" />
     <Content Include="retrabajos\rwRastreo.aspx" />
     <Content Include="retrabajos\rwResultados.aspx" />
     <Content Include="retrabajos\rwUpdate.aspx" />
@@ -242,6 +243,13 @@
     <Compile Include="MAIL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RAZON.cs" />
+    <Compile Include="retrabajos\rwFoundry.aspx.cs">
+      <DependentUpon>rwFoundry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="retrabajos\rwFoundry.aspx.designer.cs">
+      <DependentUpon>rwFoundry.aspx</DependentUpon>
+    </Compile>
     <Compile Include="retrabajos\rwHospital.aspx.cs">
       <DependentUpon>rwHospital.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
